@@ -1,0 +1,30 @@
+{
+  "name": "helperscripts",
+  "version": "1.0.0",
+  "description": "helper scripts to build my github page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no tests\" && exit 1",
+    "help": "node dante --help",
+    "newt": "node dante nb -t",
+    "newc": "node dante nb -c"
+  },
+  "author": "dan k",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.3.26",
+    "babel-loader": "6.2.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-register": "^6.5.1",
+    "chalk": "^1.1.1",
+    "commander": "^2.9.0",
+    "fs": "0.0.2",
+    "liquid-node": "^2.6.1",
+    "walk": "^2.3.9"
+  },
+  "devDependencies": {}
+}
