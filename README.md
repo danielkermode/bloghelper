@@ -1,7 +1,7 @@
 # bloghelper
 helper scripts for my blog on github pages, written in node.js.
 
-`git clone` then run `npm i` to install packages.
+`git clone` then run `npm i` to install packages (needs npm and node installed).
 
 ##commands
 Run `node dante --help` for a list of commands (created with commander npm module).
