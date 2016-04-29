@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "helper scripts to build my github page.",
   "main": "index.js",
+  "engines" : {
+    "node" : "4.2.3"
+  },
   "scripts": {
     "test": "echo \"no tests\" && exit 1",
     "help": "node dante --help",
     "newt": "node dante nb -t",
-    "newc": "node dante nb -c"
+    "newc": "node dante nb -c",
+    "engine": "nvm use 4.2.3"
   },
   "author": "dan k",
   "license": "MIT",

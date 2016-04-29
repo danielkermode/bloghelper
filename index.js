@@ -2,22 +2,30 @@ import program from 'commander';
 import { newBlog } from './utils/newBlog';
 import { deleteBlog } from './utils/deleteBlog';
 import { updateLink } from './utils/updateLink';
+import { genTime } from './utils/genTime';
 import chalk from 'chalk';
 import readline from 'readline';
 
 program
-  .command('db <file>')
+  .command('db <link>')
   .description('delete a blog with the given filename plus all links to it in other files')
-  .action(function(file){
-    deleteBlog(file);
+  .action(function(link){
+    deleteBlog(link);
   });
 
-  program
-    .command('ul <link> <newLink>')
-    .description('updates a link title found in all files with a new link title.')
-    .action(function(link, newLink){
-      updateLink(link, newLink);
-    });
+program
+  .command('ul <link> <newLink>')
+  .description('updates a link title found in all files with a new link title.')
+  .action(function(link, newLink){
+    updateLink(link, newLink);
+  });
+
+program
+  .command('gt <date> <number> <time>')
+  .description('generates a timesheet for the requested date and sprint number.')
+  .action(function(date, number, time){
+    genTime(date, number, time);
+  });
 
 program
   .option('-c, --cultural', 'Make the blog cultural')
