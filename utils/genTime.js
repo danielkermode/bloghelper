@@ -58,4 +58,5 @@ export function genTime(date, number, time) {
   const filename = number + "-time.csv";
   //create file
   fs.writeFileSync(filename, csvContent, 'utf8');
+  console.log(chalk.green('created file ' + filename));
 }
